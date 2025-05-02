@@ -1,83 +1,52 @@
-# Bouquet Image Generation and Analysis Challenge
+# 🌻 Google Cloud Skills Boost Challenge: Vertex AI - Bouquet Image Generator & Analyzer
 
-## Description
+This project was completed as part of a **Google Cloud Skills Boost** challenge. It focuses on using **Vertex AI's Imagen and Gemini models** to generate and analyze an image.
 
-This repository contains a Python project that demonstrates the use of **Vertex AI** models to:
+## 🚀 Challenge Overview
 
-1. **Generate an image** of a bouquet based on a given prompt.
-2. **Analyze the generated image** using a multimodal model to generate birthday wishes.
-
-### Task Breakdown:
-
-- **Task 1**: Generates an image using the **Imagen** model based on a prompt: _"Create an image containing a bouquet of 2 sunflowers and 3 roses."_ The generated image is saved locally.
-  
-- **Task 2**: Analyzes the saved image using the **Gemini 2.0** multimodal model to generate a birthday wish based on the image content.
+The challenge consisted of two main tasks:
 
 ---
 
-## Technologies Used
+## ✅ Task 1: Generate Bouquet Image
 
-- **Python** (for scripting)
-- **Vertex AI** (for image generation and analysis)
-- **Google Cloud** (for the cloud services used in the project)
-- **VS Code** (for project development)
-- **Git** (for version control)
-
----
-
-## Requirements
-
-Before running the code, ensure you have the following dependencies installed:
-
-1. **Python** 3.x (Python 3.7+ recommended)
-2. **Vertex AI SDK**:
-    ```bash
-    pip install vertexai
-    ```
-3. **Google Cloud SDK**:
-    ```bash
-    pip install google-cloud-logging
-    ```
+- **Objective**: Create a Python function that uses the `imagen-3.0-generate-002` model to generate an image of a bouquet.
+- **Prompt Used**:  
+  *"Create an image containing a bouquet of 2 sunflowers and 3 roses."*
+- **Output**:  
+  The generated image was saved locally as `image.jpeg`.
 
 ---
 
-## How to Run
+## ✅ Task 2: Analyze Bouquet Image
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/your-username/repository-name.git
-    cd repository-name
-    ```
+- **Objective**: Create a Python function that:
+  - Takes the generated bouquet image as input
+  - Sends it to the `gemini-2.0-flash-001` model with a text prompt to generate **birthday wishes**
+  - Uses **streaming responses** or chat-based responses
 
-2. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
-
-3. Run the script:
-    ```bash
-    python genText.py
-    ```
-
-4. You should see the output indicating that the image has been generated and analyzed, with the birthday wish being displayed.
+- **Result**:  
+  Gemini generated a beautiful birthday wish based on the bouquet image.
 
 ---
 
-## License
+## 🛠 How I Ran the Code
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+✅ All code was run **inside the Google Cloud Skills Boost environment**, which:
+- Automatically set up the project and region
+- Provided access to Vertex AI services
+- Required no manual API key or credentials setup
+
+## 📂 Files
+
+| File Name      | Description                                                         |
+| -------------- | ------------------------------------------------------------------- |
+| `genImage.py`  | Python script for Task 1: generating the bouquet image              |
+| `genText.py`   | Python script for Task 2: analyzing the bouquet image with Gemini   |
 
 ---
 
-## Acknowledgements
+## 🙌 Credits
 
-- **Google Cloud Skills Boost** for providing the hands-on labs and challenges that inspired this project.
-- **Google Cloud** for providing the Vertex AI platform.
-- **Qwiklabs** for the practical labs that provided a foundation for this project.
-
----
-
-## Contributing
-
-Feel free to fork this project and submit issues or pull requests for improvements or enhancements!
+This challenge and its resources were provided by the **[Google Cloud Skills Boost](https://www.cloudskillsboost.google/)** platform.
 
