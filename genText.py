@@ -12,7 +12,7 @@ def analyze_bouquet_image(image_path: str):
     multimodal_model = GenerativeModel("gemini-2.0-flash-001")
     
     messages = [
-        "Generate a birthday wish based on the following image",
+        "You are a creative assistant. A user has provided an image of a flower bouquet. Based on the appearance, colors, and mood of the bouquet in the image, write a warm and personalized birthday wish. Make the message joyful, heartfelt, and suitable for a birthday card.",
         Part.from_image(Image.load_from_file(location=image_path))
     ]
 
