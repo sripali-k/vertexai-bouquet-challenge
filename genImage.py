@@ -8,8 +8,8 @@ def generate_bouquet_image(
 ) -> vertexai.preview.vision_models.ImageGenerationResponse:
 
     vertexai.init(
-        project='qwiklabs-gcp-01-cc0666c6f72b',
-        location='europe-west4',
+        project='PROJECT-ID',
+        location='REGION',
     )
 
     model = ImageGenerationModel.from_pretrained("imagen-3.0-generate-002")

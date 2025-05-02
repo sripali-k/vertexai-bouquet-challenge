@@ -5,8 +5,8 @@ from vertexai.generative_models import GenerativeModel, Part, Image
 
 def analyze_bouquet_image(image_path: str):
     vertexai.init(
-        project='qwiklabs-gcp-00-7607800345c4',
-        location='us-central1',
+        project='PROJECT-ID',
+        location='REGION',
     )
     
     multimodal_model = GenerativeModel("gemini-2.0-flash-001")
