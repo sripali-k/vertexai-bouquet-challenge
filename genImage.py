@@ -30,3 +30,5 @@ def generate_bouquet_image(
 generate_bouquet_image(
     prompt='Create an image containing a bouquet of 2 sunflowers and 3 roses',
 )
+
+# root@513ccb5b0044:/home/student# /usr/bin/python3 /genImage.py
