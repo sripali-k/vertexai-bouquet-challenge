@@ -23,40 +23,37 @@ def analyze_bouquet_image(image_path: str):
 analyze_bouquet_image(
     image_path='image.jpeg'
 )
-""" #root@0ce112e7ef3f:/home/student# /usr/bin/python3 /genText.py
+"""root@2a0a384f10cb:/home/student# /usr/bin/python3 /genText.py
 candidates {
   content {
     role: "model"
     parts {
-      text: "Happy Birthday! May your day be as bright and cheerful as a sunflower, and filled with as much love and beauty as a red rose. Wishing you a truly wonderful day!\n"
+      text: "Happy Birthday!\n\nLike this vibrant bouquet of sunflowers and roses, may your day be filled with sunshine and love. The sunflowers remind me of your radiant smile, and the roses symbolize the deep affection we all have for you. Wishing you a year ahead that\'s just as bright and beautiful as you are!\n\nWith love and best wishes,\n[Your Name]\n"
     }
   }
   finish_reason: STOP
-  avg_logprobs: -0.43720875846015084
+  avg_logprobs: -0.41849861145019529
 }
 usage_metadata {
-    prompt_token_count: 1299
-  candidates_token_count: 36
-  total_token_count: 1335
-  prompt_tokens_details {
-       modality: IMAGE
-    token_count: 1290
-  }
+  prompt_token_count: 1345
+  candidates_token_count: 75
+  total_token_count: 1420
   prompt_tokens_details {
     modality: TEXT
-    token_count: 9
+    token_count: 55
+  }
+  prompt_tokens_details {
+    modality: IMAGE
+    token_count: 1290
   }
   candidates_tokens_details {
     modality: TEXT
-    token_count: 36
+    token_count: 75
   }
-  }
+}
 model_version: "gemini-2.0-flash-001"
 create_time {
-  seconds: 1746203281
-  nanos: 176822000
+  seconds: 1746212845
+  nanos: 193460000
 }
-response_id: "kfIUaLblCriamecPiu7i0Ag"
-        
-
-         """
+response_id: "7RcVaLTnC6Cjz_IP5JjTkAY" """
